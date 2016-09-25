@@ -1,0 +1,30 @@
+Assign1: Due 11:59PM September 23
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list and a canary test.
+
+After completing the programming (and only after that) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+	This assignment has taught us how test driven development enhances effective coding. We experienced how the design can evolve from the strategic design phase to tactical design phase. Opting test driven development helped us to get quick feedback and know if something is wrong. We understood the importance of writing more tests in the lower level i.e. Class level tests than the UI tests. For example, VerifyIsAnAdjacentCell testcase failed when we forgot to verify the condition where the adjacent cell might also be a mine cell. Thus, it helped us improvise our code. We learnt that it not about designing a software but desgning an effective software where the code is as simple and is as minimal as possible. This helped us eliminate the fields which could be computed directly and implement in the function.
+
+	It was really a great learning curve as we got to learn how to effectively use different tools effectively for writing quality code, we used jacoco as suggested which provided us info related where we were using redundant code and helped to remove unnecssary conditions in the code. We witnessed the power of evolving the code as we progressed from implementing new methods in the code, we changed the test cases and same methods several sometimes were feeling annoyed however once we see that we have avoid a mjor bug by changing that code or test we felt proud of our changes. Within a short span we gained knowledge of multiple tools like Intellij IDEA, gradle, JUnit, Jacoco and also we used FindBugs plugin which helped us in finding few performance issues.  
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+	The strategic design consisted of three main classes MinesweeperBoard, MinesweeperController and MinesweeperGUI along with two inner classes for mouselistener and action listsener, which were responsible for handling the data and logic of the game, handling the control flow of the program and creating the GUI for user interaction respectively. Whereas the current design includes a more optimized version comprising of two classes. Minesweeper, which is responsible for handling the data, logic as well as the controlled flow of the program and MinesweeperGUI which is responsible for creating the view of the game using the JFrame objects also in new design we added a class called Cell which extends buttons.
+	Methods like isSeal and unSealed is combined as toggleSeal to keep the code as simple and minimum as possible. The unit testcases have been included to get a quick feedback about the design. During the strategic design phase we planned to create buttons and store them in a two dimensional array and use them however since to write lesser and optimized code we created a class extending buttons which was more optimized since we used a list to store it and access the cell. Also we changed names of many methods and also added few new methods which we didn't consider during the strategic design.
+	
+
+3. Were there any surprise or things you did not expect along the way? Any 
+particular problem faced, things you had to tackle that you did not expect 
+beforehand?
+
+	There were few surprises, Once when we didn't anticipate a build failure as the code got compiled successfully, the build was broken due to a run time error, we didn't get much idea at that time later after hoing through the feedback we understood how to debug a build failure due to a run time exception. Also we got stuck in identifying the code coverage for Enums which we learnt after going through the discussions in the group. We were not aware of code coverage tools before hand, however we were able to learn them within short span of time which made us more happy. 
+
+	
+
+
